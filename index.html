@@ -1,0 +1,134 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+  </head>
+  <body>
+    <div class="price">
+      <span>Enter the amount that you want in USD: </span>
+      <input type="number" class="amount" />
+      <button onclick="Check()" id="check">Check</button>
+      <div class="egp">Price in EGP <span></span></div>
+      <div class="sar">Price in SAR <span></span></div>
+      <div class="Leb">Price in LBP <span></span></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Currency Converter</title>
+    <style>
+      /* CSS for the header */
+      .header {
+        background-color: #f2f2f2;
+        padding: 20px;
+        text-align: center;
+      }
+      .container {
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 100px;
+        background-color: rgb(21, 83, 119);
+        padding: 40px;
+        font-size: 25px;
+        font-weight: 600;
+
+        border-radius: 5px;
+        width: 50%;
+      }
+      input {
+        background-color: rgb(224, 243, 237);
+        padding: 10px;
+        width: 70%;
+        font-size: 25px;
+        margin: 5px;
+        margin-bottom: 10px;
+      }
+      button {
+        border-radius: 15px;
+        font-weight: 500;
+        font-size: 20px;
+        padding: 10px;
+      }
+      button:hover {
+        background-color: rgb(60, 176, 211);
+        color: white;
+      }
+      .header h1 {
+        font-size: 28px;
+        color: #333;
+        margin: 0;
+      }
+
+      .header p {
+        font-size: 16px;
+        color: #666;
+        margin: 10px 0 0;
+        font-weight: 700;
+      }
+
+      .header button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+
+      .header button:hover {
+        background-color: #45a049;
+      }
+
+      .egp,
+      .sar,
+      .leb {
+        font-style: italic;
+      }
+
+      /* Example media query for responsiveness */
+      @media screen and (max-width: 600px) {
+        .header h1 {
+          font-size: 24px;
+        }
+
+        .header p {
+          font-size: 14px;
+        }
+      }
+      body {
+        background-image: url("img/converter.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Currency Converter</h1>
+      <p>Convert your currency easily!</p>
+    </div>
+    <div class="container">
+      <div class="price">
+        <div>Enter the amount that you want in USD:</div>
+        <br />
+        <input type="number" class="amount" />
+        <button onclick="Check()" id="check">Check</button>
+        <div class="egp">Price in EGP: <span></span></div>
+        <div class="sar">Price in SAR: <span></span></div>
+        <div class="Leb">Price in LBP: <span></span></div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
